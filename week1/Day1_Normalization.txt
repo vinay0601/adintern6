@@ -1,0 +1,122 @@
+Database:
+Data: collection process information 
+	structured information, row material,value for something we require
+	e.g. age,name
+base:location where all resource is stored
+database: collection of processed information stored in filesystem 
+Contact[name phone company email] =>database
+0. type data and validate
+1. Create
+2. Update
+3. Delete
+4. View
+	a. Sort
+	b. Search
+	
+Contact[name="Preeti3" notnull phone="+919876543210"not null 
+company=null email=null]
+==============================================================
+RDBMS: Relational DBMS
+Relation: Table
+			is set of Rows
+						set of fixed columns
+Contact[name phone company email]
+Set=> unique records 
+set of jeans 
+Grows Vertically
+
+====================================================
+NoSQL->Not Only SQL 
+profile 	friendlist	
+ A 			[b,c,d,e]  profile f1,f2,f3,f4
+ b 			[A,c,f,e]  profile f1,f2,f3,f4	
+ e 			[a,b]	   profile f1,f2	
+ f 			[b]		   profile f1	
+Post     likes			0,1,..n 
+		 dislikes		0,1,..n
+
+1. document
+		post={name:"post1",likes:["",""],dislikes:["",""]}
+2. column
+3. graph 
+MongoDB,Cassandra,Redis,Neo4j
+==============================================================
+Transitivity
+Ramesh and Suresh | suresh and mahesh => Ramesh and Mahesh friend
+a=b=c=> a=c
+
+ACID = Automicity Consistancy Isolation Durability 
+Data Integrity
+
+=============
+Dabase
+RDBMS
+Normalize 1NF,2NF,3NF
+===============================
+DBMS=>DATABASE MANAGEMENT SYSTEM
+=============================================
+SYSTEM=>LANGUAGE => SQL=> Structured Query Language
+1. DDL DATA DEFINITION LANGUAGE
+   CREATE, ALTER,DROP,TRUNCATE		
+2. DML DATA MANIPULATION LANGUAGE
+	INSERT,UPDATE,DELETE
+3. DQL DATA QUERY LANGUAGE
+   FROM,SELECT,WHERE,GROUP BY,ORDER BY,HAVING
+   IN, NOT IN, BETWEEN , NOT BETWEEN, EXIST,ANY, ALL
+   AS, ARITHMATIC, COMPARATOR,LOGICAL
+   CASE WHEN THEN
+   FUNCTIONS: MATH,DATE,NULL,STRING
+4. DCL DATA CONTROL LANGUAGE
+   GRANT, REVOKE	
+5. TCL TRANSACTION CONTROL LANGUAGE
+	COMMIT, ROLLBACK,SAVE POINT
+    BEGIN END
+SQL:
+TABLE
+VIEW
+SUBQUERIES
+JOINS
+UNION/INTERSECTS/UNION ALL
+CALLING FUNCTIONS
+CLLING PROCEDURE
+-----------------
+PL/SQL:
+CREATION FUNCTION/PROCEDURE/TRIGGER
+===============================================
+<Oracle> SQL
+1. DATA TYPE
+2. SYNTAX DDL,DML,DQL,DCL,TCL
+3. FUNCTIONS
+4. PROCEDURE
+===============================================
+SERVER=>rUNNINg=>SERVICE=>PORT=>CONNECTION_String[hostname,port,username,password]
+YOUR SYSTEM=> HOST=>SERVICE(service id/instanceid)
+LOCALHOST:PORT=>SERVICE INSTANCE
+localhost:127.0.0.1
+jdbc:oracle://localhost:1521:xe
+
+classA[0-126]||ClassB[128-]|classC|ClassD
+
+ENG-> Multiple project
+Eng-> single project->mutliple databases
+Port 0-65535 [0-1025]
+===================================================
+Database
+RDBMS
+Normalization
+	a.1NF
+	b.2NF
+	c.3NF
+	*operational data not to be stored in table
+Tables[set Row[set fixed columns [null|rules|datatype]]]
+==================================================
+How to connect with Oracle instance
+Client->sqlDeveloper
+	   connectionstring
+	   1.host: localhost
+	   2.port: 1521
+	   3.username:sys as sysdba
+	   4.password: root
+	   5.SID/serviceName
+
+

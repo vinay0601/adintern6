@@ -1,0 +1,82 @@
+d:\training2022\week1\assignment01.xls
+Normalization -> 
+==============================================================
+Domain: Bank,Finance,Healthcare,Ecommerce,Retails,Agriculture,
+Education,Entertainment,Industory(Biscuit/...)
+==============================================================
+Nouns
+BankDomain: Customer has an Account in a Bank.
+Noun: Customer,Account
+
+HelacareDomain: Patient visits a Doctor.
+Noun: Patient,Doctor
+
+Ecommerce: Customer placed an Order which had three Products in it.
+Noun: Customer, order,Products,vendors
+
+Education: Some student have registed for Java Certification Course 
+conducted by Mr. Durga.
+Noun:Student, Course, Faculty
+
+Factory: Cadbary factory manifactures different chocalate Products.
+for manifacturing they purchase row materials.
+Noun: Matrial,Product,worker,sales,purchase,orders
+
+Entity Relationship model:
+entity->a thing ->Relation->Table
+
+DataModeling
+	1. Entity
+		strong entity
+		weak entity
+	2. @ttribute
+	3. Relationship(Entity and @ttribute or Entity and Entity)
+
+================================================================
+Oracle SQL
+Connection String to connect the Oracle Server service instance
+host	:localhost|IP address|machinename
+port    :1521
+role	:sysdba (Database Administrator)
+user	:sys
+password:root
+=================================================================
+Oracle ->Database=>Tablespace ->user
+Tablespace[table,view,procedure,function,sql]
+XE->sys as sysdba 
+1.creation tables,view,procedure,functions
+2.alert/drop
+3.ddl,dml,dcl,tcl,dql
+
+1. DDL 
+   your custom user on oracle instance
+   create user <user_name> identified by <password>;
+   create user c##<user_name> identified by <password>;
+   
+   https://notepad.pw/day1_ad
+   
+--########################################################   
+-- create user    
+--########################################################
+   SQL> CREATE USER
+  2  c##aduser
+  3  IDENTIFIED BY
+  4  root;
+--########################################################
+-- output User created.
+--########################################################	
+  SELECT 
+		username, 
+		authentication_type
+	FROM
+		dba_users 
+	
+  
+  
+
+
+
+
+
+
+
